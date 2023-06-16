@@ -8,7 +8,7 @@ fn main() {
         .add_plugins(DefaultPlugins)
         .add_plugin(PanCamPlugin::default())
         .add_plugin(WorldInspectorPlugin::default())
-        .add_startup_system(setup)
+        .add_systems(Startup, setup)
         .run();
 }
 
